@@ -65,7 +65,7 @@
     </div>
 </div>
 
-<div class="activities">
+<!-- <div class="activities">
     <div class="container">
         <h2>Recent Activities</h2>
         <div class="activities-wrapper">
@@ -86,27 +86,9 @@
                     1 sec ago
                 </div>
             </div>
-            <hr>
-            <div class="row activity-content">
-                <div class="col-md-9">
-                    Mostafa Has Posted a food post a few seconds ago.
-                </div>
-                <div class="col-md-3 date">
-                    1 sec ago
-                </div>
-            </div>
-            <hr>
-            <div class="row activity-content">
-                <div class="col-md-9">
-                    Mostafa Has Posted a food post a few seconds ago.
-                </div>
-                <div class="col-md-3 date">
-                    1 sec ago
-                </div>
-            </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 </body>
