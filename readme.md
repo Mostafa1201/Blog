@@ -17,6 +17,7 @@ MyBlog a simple blog system which provides user interface to browse and explore 
 - open command line and run : composer install
 - Copy env.example file to .env file and change database configurations according to your local database.
 - run : php artisan key:generate
+- run : php artisan migrate
 - Go the localhost at the browser , no need for any plugins i have attached all links in the project.
 - Internet is required because there are online links.
 - You need to register to be able to add,delete or update posts and categories (you will be registered as an admin)
