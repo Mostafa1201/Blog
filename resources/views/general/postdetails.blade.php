@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Post Details</title>
     @include('header')
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
 @include('navbar')
