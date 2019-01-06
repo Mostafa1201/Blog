@@ -25,7 +25,7 @@ $(document).ready(function(){
             var h2 = $('#'+card+' h2');
             var categoryName = h2.text();
             var test = '#'+card+' .form1 form';
-            console.log(test);
+            //console.log(test);
             $(editButton).click(function(){
                 $(h2).fadeOut(0);
                 if(!$('#input-'+cardID).val()){     //dont create input if there is an already one there and just show it.
@@ -56,12 +56,15 @@ $(document).ready(function(){
         $('.card-new').fadeOut(0);
     });
 
+    var postWrapperTopMargin = $('.navbar').outerHeight();
+    $('.post-wrapper').transition({'margin-top':postWrapperTopMargin*2},1000);
+
     var editPostInput =  $('.post-edit input#title.form-control');
     var editPostInputText =  editPostInput.val();
     $(editPostInput).focus().val("").val(editPostInputText);
 
     $(".nav-button").click(function(){
-        console.log("CLICKED");
+        //console.log("CLICKED");
         if (!$(this).hasClass('x')){
             $(".nav-button .middle").css({"display":"none"});
             $(".nav-button .top").css({"top":"10px"}).transition({"transform":"rotate(45deg);"},300);

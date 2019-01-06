@@ -9,7 +9,7 @@
 </head>
 <body>
 @include('navbar')
-
+@include('footer')
 <div class="post-wrapper">
     <div class="post">
         <div class="container">
@@ -25,7 +25,7 @@
     </div>
 </div>
 
-@include('footer')
+
 
 </body>
 </html>
