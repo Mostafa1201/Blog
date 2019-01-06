@@ -32,7 +32,7 @@ MyBlog a simple blog system which provides user interface to browse and explore 
 
 ## Conclusion
 
-I have done unit tests on it but still didnt do the code coverage.
-I deployed the project on heroku for the online use , here is the link : https://myblog1201.herokuapp.com
+- I have done unit tests on it and also the code coverage , you can find the files in code-coverage directory in blog.
+- I deployed the project on heroku for the online use , here is the link : https://myblog1201.herokuapp.com
 
 Thanks
