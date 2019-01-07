@@ -27,17 +27,4 @@ class Category extends Model
         return Category::limit(3)->get();
     }
 
-    /**
-     * get the id of the category by category name since it is unique
-     *
-     * @return int
-     */
-    public function getCategoryIDByName($categoryName)
-    {
-        return DB::table('categories')
-            ->select('id')
-            ->where('name', '=',$categoryName)
-            ->value('id');
-    }
-
 }

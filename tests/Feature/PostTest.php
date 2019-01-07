@@ -14,16 +14,16 @@ class PostTest extends TestCase
      *
      * @return void
      */
-    public function testDisplaysPosts()
+    public function testDisplayPosts()
     {
         $this->get('/')
             ->assertStatus(200)
             ->assertSee('Post');
     }
 
-    public function testDisplaysPostCreated()
+    public function testDisplayPostCreated()
     {
-        $post = factory(Post::class)->make();
+        $post = factory(Post::class)->create();
         $this->get('/')
             ->assertStatus(200)
             ->assertSee($post->name);

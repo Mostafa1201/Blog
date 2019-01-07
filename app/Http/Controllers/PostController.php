@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Validator;
 
-class PostController extends ApiController
+class PostController extends Controller
 {
     /**
      * Display a listing of Posts in the Home page.

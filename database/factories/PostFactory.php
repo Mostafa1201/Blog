@@ -18,6 +18,6 @@ $factory->define(App\Post::class, function (Faker $faker) {
         'title' => $faker->sentence(5),
         'description' => $faker->text(),
         'views' => 0,
-        'category_id' => 15,
+        'category_id' => 1,
     ];
 });
