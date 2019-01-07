@@ -28,8 +28,11 @@ MyBlog a simple blog system which provides user interface to browse and explore 
 - Only the admin can add , delete or update posts and categories.
 - From the description of the task I assumed that there is a one to many relationship between category and post so a category can have many posts but every post has only one category assigned to it.
 - Only the 3 newly added categories appears in the navbar , you can browse all categories from the dropdown in the navbar.
+- There is no button for the admin login page , so it has to be accessed from the route : admin/dashboard/login or admin/dashboard
 
 ## Conclusion
 
-I have done unit tests on it but still didnt do the code coverage , i will also deploy it on heroku.
+- I have done unit tests on it and also the code coverage , you can find the files in code-coverage directory in blog.
+- I deployed the project on heroku for the online use , here is the link : https://myblog1201.herokuapp.com
+
 Thanks
