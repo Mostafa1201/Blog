@@ -14,7 +14,7 @@
     <div class="post post-edit">
         <div class="card card-body bg-light">
             <div class="container">
-                <h2>Add new post</h2>
+                <h2>Edit post</h2>
                 <form method="post" action="{{ url('/admin/dashboard/posts/'.$post->id) }}">
                     @csrf
                     {{ method_field('PUT') }}
@@ -33,10 +33,14 @@
                     </div>
                     @if(!$categories->isEmpty())
                         <div class="category-group">
-                            @foreach($categories as $category)
-                                <input type="radio" id="{{ $category->id }}" value="{{ $category->id }}" name="category_id" maxlength="10">
-                                <label for="{{ $category->id }}">{{ $category->name }}</label>
-                            @endforeach
+                            @for($i=0 ;$i<count($categories);$i++)
+                                @if($post->category->id == $categories[$i]->id)
+                                    <input type="radio" id="{{ $categories[$i]->id }}" value="{{ $categories[$i]->id }}" name="category_id" maxlength="10" checked>
+                                @else
+                                    <input type="radio" id="{{ $categories[$i]->id }}" value="{{ $categories[$i]->id }}" name="category_id" maxlength="10">
+                                @endif
+                                <label for="{{ $categories[$i]->id }}">{{ $categories[$i]->name }}</label>
+                            @endfor
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     @else
