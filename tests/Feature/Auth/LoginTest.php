@@ -60,4 +60,18 @@ class LoginTest extends TestCase
         $this->assertFalse(session()->hasOldInput('password'));
         $this->assertGuest();
     }
+
+    public function testAdminCanLogout(){
+        $admin = factory(Admin::class)->create([
+            'password' => bcrypt($password = 'i-like-laravel'),
+            'email_verified_at' => "2019-01-03 02:41:35"
+        ]);
+        $response = $this->post('admin/dashboard/login', [
+            'email' => $admin->email,
+            'password' => $password,
+        ]);
+        $response->assertRedirect('admin/dashboard');
+        $response = $this->get('admin/dashboard/logout');
+        $response->assertRedirect('admin/dashboard/login');
+    }
 }

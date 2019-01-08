@@ -18,7 +18,7 @@
             </div>
             @auth
                 <div class="col-sm-3 title-right">
-                    <button type="submit" class="btn btn-5" id="add-category-button">
+                    <button type="submit" class="btn btn-5" name="add-category-button" id="add-category-button">
                         Add Category +
                     </button>
                 </div>

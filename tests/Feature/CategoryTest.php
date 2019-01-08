@@ -9,6 +9,7 @@ use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
+
 class CategoryTest extends TestCase
 {
     /**
@@ -36,6 +37,7 @@ class CategoryTest extends TestCase
         $category = factory(Category::class)->create([
             'name' => $category->name
         ]);
+
         $this->get('/categories')
             ->assertSee($category->name);
     }
