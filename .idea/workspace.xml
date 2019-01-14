@@ -2,79 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed09d3ff-1a19-4386-8ebb-9ac602919658" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" />
       <change beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/ComposerServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/ComposerServiceProvider.php" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Admin.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Admin.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Category.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Category.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Console/Kernel.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Console/Kernel.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Console/dashboard.html" afterPath="$PROJECT_DIR$/public/code-coverage/Console/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Console/index.html" afterPath="$PROJECT_DIR$/public/code-coverage/Console/index.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Exceptions/Handler.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Exceptions/Handler.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Exceptions/dashboard.html" afterPath="$PROJECT_DIR$/public/code-coverage/Exceptions/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Exceptions/index.html" afterPath="$PROJECT_DIR$/public/code-coverage/Exceptions/index.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/AdminController.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/AdminController.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/ForgotPasswordController.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/ForgotPasswordController.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/LoginController.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/LoginController.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/RegisterController.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/RegisterController.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/ResetPasswordController.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/ResetPasswordController.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/VerificationController.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/VerificationController.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/dashboard.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/index.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Auth/index.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/CategoryController.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/CategoryController.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Controller.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/Controller.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/PostController.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/PostController.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/dashboard.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/index.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Controllers/index.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Kernel.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Kernel.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/Authenticate.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/Authenticate.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/CheckForMaintenanceMode.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/CheckForMaintenanceMode.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/EncryptCookies.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/EncryptCookies.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/RedirectIfAuthenticated.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/RedirectIfAuthenticated.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/TrimStrings.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/TrimStrings.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/TrustProxies.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/TrustProxies.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/VerifyCsrfToken.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/VerifyCsrfToken.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/dashboard.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/index.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/Middleware/index.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/dashboard.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Http/index.html" afterPath="$PROJECT_DIR$/public/code-coverage/Http/index.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Post.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Post.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Providers/AppServiceProvider.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Providers/AppServiceProvider.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Providers/AuthServiceProvider.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Providers/AuthServiceProvider.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Providers/BroadcastServiceProvider.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Providers/BroadcastServiceProvider.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Providers/ComposerServiceProvider.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Providers/ComposerServiceProvider.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Providers/EventServiceProvider.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Providers/EventServiceProvider.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Providers/RouteServiceProvider.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/Providers/RouteServiceProvider.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Providers/dashboard.html" afterPath="$PROJECT_DIR$/public/code-coverage/Providers/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/Providers/index.html" afterPath="$PROJECT_DIR$/public/code-coverage/Providers/index.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/User.php.html" afterPath="$PROJECT_DIR$/public/code-coverage/User.php.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/dashboard.html" afterPath="$PROJECT_DIR$/public/code-coverage/dashboard.html" />
-      <change beforePath="$PROJECT_DIR$/public/code-coverage/index.html" afterPath="$PROJECT_DIR$/public/code-coverage/index.html" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/public/js/style.js" afterPath="$PROJECT_DIR$/public/js/style.js" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/add-post.blade.php" afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/edit-post.blade.php" afterPath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/general/categories.blade.php" afterPath="$PROJECT_DIR$/resources/views/categories/index.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/general/category-posts.blade.php" afterPath="$PROJECT_DIR$/resources/views/categories/posts.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/general/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/general/postdetails.blade.php" afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/header.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/app.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/links.blade.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navbar.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/navbar.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/PostTest.php" afterPath="$PROJECT_DIR$/tests/Feature/PostTest.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -128,8 +56,8 @@
       <file leaf-file-name=".env" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="312">
+              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -511,12 +439,12 @@
       <workItem from="1546975121132" duration="7083000" />
       <workItem from="1547051600100" duration="2639000" />
       <workItem from="1547401295371" duration="9499000" />
-      <workItem from="1547417396984" duration="9006000" />
+      <workItem from="1547417396984" duration="9177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50781000" />
+    <option name="totallyTimeSpent" value="50952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1099,8 +1027,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="312">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding />
         </state>
       </provider>
