@@ -82,4 +82,34 @@ $(document).ready(function(){
         }, 300);
     });
 
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    $('#add-post-form').on('submit', function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: '/admin/dashboard/posts',
+            data: $(this).serialize(),
+            success: function(msg) {
+                $( location ).prop( 'pathname', '/' );
+            },
+            error: function (e) {
+                if(e.status === 401){       //redirect if not authenticated user.
+                    $( location ).prop( 'pathname', '/admin/dashboard/login' );
+                }
+                else if(e.status === 422){      //validation errors.
+                    $('.validation-errors').fadeIn(300);
+                    $.each(e.responseJSON.errors, function(key,value) {
+                        $('.validation-errors ul').append('<li>'+value+'</li>');
+                    });
+                }else{
+                    alert("SomeThing Went Wrong please try again");
+                }
+            }
+        });
+    });
+
 });

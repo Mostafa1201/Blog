@@ -6,7 +6,7 @@
         <div class="card card-body bg-light">
             <div class="container">
                 <h2>Add new post</h2>
-                <form method="post" action="{{ url('/admin/dashboard/posts') }}">
+                <form method="post" action="{{ url('/admin/dashboard/posts') }}" id="add-post-form">
                     @csrf
                     <div class="form-group">
                         <label for="title">Title:</label>
@@ -36,8 +36,19 @@
                     @endif
                 </form>
             </div>
+
         </div>
+
+        <div class="validation-errors">
+            <div class="alert alert-danger">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
     </div>
+
+
 </div>
 
 @endsection

@@ -745,6 +745,13 @@ a.my-nav-links:hover{
     text-align: right;
 }
 
+.validation-errors{
+    display: none;
+}
+
+.validation-errors ul{
+    margin-bottom: 0;
+}
 
 /* ////////////////////////////       Media Queries Section   //////////////////////////////// */
 

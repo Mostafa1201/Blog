@@ -39,29 +39,29 @@ class PostController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return array|\Illuminate\Http\Response
+     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(),[
-            'title' => 'required',
+        $validator = Validator::make($request->all(), [
+            'title' => 'required|max:30',
             'description' => 'required',
             'category_id' => 'required'
         ]);
-        if ($validator->fails()){
-            return ['errors'=> [
-                'message'=>"Parameter Failed Validation Error",
-                'Status Code'=>422,
-            ]
-            ];
-        }
-        $post = new Post;
-        $post->title = $request->input('title');
-        $post->description = $request->input('description');
-        $post->category_id = $request->input('category_id');
-        $post->views = 0;
-        $post->save();
-        return redirect('/');
+            if ($validator->fails()) {
+                return response()->json(['errors'=>$validator->errors()],422);
+            }
+            else{
+                $post = new Post;
+                $post->title = $request->input('title');
+                $post->description = $request->input('description');
+                $post->category_id = $request->input('category_id');
+                $post->views = 0;
+                $post->save();
+                return redirect('/');
+            }
+
+
     }
 
     /**
@@ -115,7 +115,7 @@ class PostController extends Controller
             ];
         }
         $validator = Validator::make($request->all(),[
-            'title' => 'required',
+            'title' => 'required|max:30',
             'description' => 'required',
             'category_id' => 'required'
         ]);
