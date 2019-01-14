@@ -64,35 +64,22 @@ $(document).ready(function(){
     $(editPostInput).focus().val("").val(editPostInputText);
 
     $(".nav-button").click(function(){
-        //console.log("CLICKED");
+        $(".nav-button").css({"pointer-events":"none"});
         if (!$(this).hasClass('x')){
             $(".nav-button .middle").css({"display":"none"});
             $(".nav-button .top").css({"top":"10px"}).transition({"transform":"rotate(45deg);"},300);
             $(".nav-button .bottom").css({"top":"10px"}).transition({"transform":"rotate(-45deg)"},300);
-            //$(".main-nav").css({"flex-direction":"column","height":"auto"});
-            // $(".first-half").css({"display":"none"});
-            // $(".right-of-nav ul").css({"margin-left":"0"});
-            // $(".right-of-nav").fadeIn(2000);
             $(".nav-button").addClass("x");
         }
         else{
             $(".nav-button .middle").css({"display":"block"});
             $(".nav-button .top").css({"top":"0"}).transition({"transform":"rotate(0);"},300);
             $(".nav-button .bottom").css({"top":"20px"}).transition({"transform":"rotate(0)"},300);
-            //$(".main-nav").css({"flex-direction":"row","height":"0"});
-            // $(".right-of-nav").css({"display":"none"});
-            // $(".first-half").fadeIn(1000);
             $(".nav-button").removeClass("x");
         }
+        setTimeout(function(){                                      // Fixes a bug that when the user spams the navbutton it turns to
+            $(".nav-button").css({"pointer-events":"auto"});        // X instead of normal bars without toggle
+        }, 300);
     });
-    // $(window).resize(function() {
-    //     var windowWidth = $(window).innerWidth();
-    //     var dropDownMenu = $('li.nav-item.dropdown');
-    //     if (windowWidth < 880) {
-    //         $(dropDownMenu).removeClass("ml-auto");
-    //     }else{
-    //         $(dropDownMenu).addClass("ml-auto");
-    //     }
-    // });
 
 });

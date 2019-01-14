@@ -1,16 +1,7 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Posts</title>
-    @include('header')
-</head>
-<body>
-@include('navbar')
+@extends('master')
 
-<div class="posts">
+@section('content')
+    <div class="posts">
     <div class="container">
         <div class="row">
             <div class="col-sm-9">
@@ -70,7 +61,4 @@
         @endif
     </div>
 </div>
-
-@include('footer')
-</body>
-</html>
+@endsection

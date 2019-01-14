@@ -1,14 +1,6 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin Dashboard Homepage</title>
-    @include('header')
-</head>
-<body>
-@include('navbar')
+@extends('master')
+
+@section('content')
 
 <div class="stats">
     <div class="container">
@@ -93,6 +85,4 @@
     </div>
 </div> -->
 
-@include('footer')
-</body>
-</html>
+@endsection

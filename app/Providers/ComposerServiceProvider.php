@@ -14,7 +14,7 @@ class ComposerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer('navbar', function ($view) {
+        view()->composer('layouts.navbar', function ($view) {
             $category = new Category;
             $navCategories = $category->getNavbarCategories();
             $view->navCategories = $navCategories;

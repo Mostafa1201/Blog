@@ -21,7 +21,7 @@ class PostController extends Controller
         foreach($posts as $post){
             $post->created_at = Carbon::parse($post->created_at);
         }
-        return view('general.home')->with('posts',$posts);
+        return view('home')->with('posts',$posts);
     }
 
     /**
@@ -32,7 +32,7 @@ class PostController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('admin.add-post')->with('categories',$categories);
+        return view('posts.create')->with('categories',$categories);
     }
 
     /**
@@ -78,7 +78,7 @@ class PostController extends Controller
         }
         $post->created_at = Carbon::parse($post->created_at);
         $post->increment('views');
-        return view('general.postdetails')->with('post',$post);
+        return view('posts.show')->with('post',$post);
     }
 
     /**
@@ -94,7 +94,7 @@ class PostController extends Controller
             return redirect('404');
         }
         $categories = Category::all();
-        return view('admin.edit-post')->with('post',$post)
+        return view('posts.edit')->with('post',$post)
                                            ->with('categories',$categories);
     }
 

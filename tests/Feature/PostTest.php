@@ -84,7 +84,7 @@ class PostTest extends TestCase
         $this->assertDatabaseMissing('posts', [
             'id' => $post->id
         ]);
-        $this->get('/posts')
+        $this->get('/')
             ->assertDontSee($post->id);
     }
 
@@ -94,7 +94,6 @@ class PostTest extends TestCase
         $response = $this->actingAs($admin)->post('admin/dashboard/login');
         $response->assertRedirect('admin/dashboard');
         $this->delete('admin/dashboard/posts/random')->assertRedirect('404');
-
     }
 
 
