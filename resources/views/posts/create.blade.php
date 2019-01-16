@@ -1,6 +1,11 @@
 @extends('master')
 
+@section('specific_page_scripts')
+    <script src="{{ asset('js/post.js') }}"></script>
+@endsection
+
 @section('content')
+
 <div class="post-wrapper">
     <div class="post post-new">
         <div class="card card-body bg-light">
@@ -39,16 +44,9 @@
 
         </div>
 
-        <div class="validation-errors">
-            <div class="alert alert-danger">
-                <ul>
-                </ul>
-            </div>
-        </div>
+        <div class="validation-errors"></div>
 
     </div>
-
-
 </div>
 
 @endsection

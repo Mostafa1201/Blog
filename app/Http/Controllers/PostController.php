@@ -48,20 +48,18 @@ class PostController extends Controller
             'description' => 'required',
             'category_id' => 'required'
         ]);
-            if ($validator->fails()) {
-                return response()->json(['errors'=>$validator->errors()],422);
-            }
-            else{
-                $post = new Post;
-                $post->title = $request->input('title');
-                $post->description = $request->input('description');
-                $post->category_id = $request->input('category_id');
-                $post->views = 0;
-                $post->save();
-                return redirect('/');
-            }
-
-
+        if ($validator->fails()) {
+            return response()->json(['errors'=>$validator->errors()],422);
+        }
+        else{
+            $post = new Post;
+            $post->title = $request->input('title');
+            $post->description = $request->input('description');
+            $post->category_id = $request->input('category_id');
+            $post->views = 0;
+            $post->save();
+            return redirect('/');
+        }
     }
 
     /**
@@ -119,12 +117,8 @@ class PostController extends Controller
             'description' => 'required',
             'category_id' => 'required'
         ]);
-        if ($validator->fails()){
-            return ['errors'=> [
-                'message'=>"Parameter Failed Validation Error",
-                'Status Code'=>422,
-            ]
-            ];
+        if ($validator->fails()) {
+            return response()->json(['errors'=>$validator->errors()],422);
         }
         $post = Post::find($postid);
         if($post == null){

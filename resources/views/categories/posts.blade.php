@@ -16,12 +16,29 @@
                             </h2>
                             <small class="date"> {{ $post->created_at->diffForHumans() }} </small>
                             <p> {{ $post->description }} </p>
-                            <form method="get" action="{{ url('/posts/'.$post->id) }}">
-                                @csrf
-                                <button type="submit" class="btn btn-5">
-                                    Post Details ->
-                                </button>
-                            </form>
+                            <div class="row">
+                                <div class="col-6 post-footer-left">
+                                    <form method="get" action="{{ url('/posts/'.$post->id) }}">
+                                        @csrf
+                                        <button type="submit" class="btn btn-5">
+                                            Post Details ->
+                                        </button>
+                                    </form>
+                                </div>
+                                @auth
+                                    <div class="col-6 post-footer-right">
+                                        <form method="get" action="{{ url('admin/dashboard/posts/'.$post->id.'/edit') }}">
+                                            @csrf
+                                            <button type="submit" class="btn btn-primary"> Edit </button>
+                                        </form>
+                                        <form method="post" action="{{ url('/admin/dashboard/posts/'.$post->id) }}">
+                                            @csrf
+                                            {{ method_field('DELETE') }}
+                                            <button type="submit" class="btn btn-danger"> Delete </button>
+                                        </form>
+                                    </div>
+                                @endauth
+                            </div>
                         </div>
                     </div>
                 @endforeach

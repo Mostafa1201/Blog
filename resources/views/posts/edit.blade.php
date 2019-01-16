@@ -1,12 +1,16 @@
 @extends('master')
 
+@section('specific_page_scripts')
+    <script src="{{ asset('js/post.js') }}"></script>
+@endsection
+
 @section('content')
 <div class="post-wrapper">
     <div class="post post-edit">
         <div class="card card-body bg-light">
             <div class="container">
                 <h2>Edit post</h2>
-                <form method="post" action="{{ url('/admin/dashboard/posts/'.$post->id) }}">
+                <form method="post" action="{{ url('/admin/dashboard/posts/'.$post->id) }}" id="edit-post-form">
                     @csrf
                     {{ method_field('PUT') }}
                     <div class="form-group">
@@ -40,6 +44,7 @@
                 </form>
             </div>
         </div>
+        <div class="validation-errors"></div>
     </div>
 </div>
 

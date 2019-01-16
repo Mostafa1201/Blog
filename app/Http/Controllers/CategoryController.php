@@ -29,24 +29,18 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(),[
-            'category-name' => 'required'
+            'category-name' => 'required|max:15'
         ]);
-        if ($validator->fails()){
-            return ['errors'=> [
-                            'message'=>"Parameter Failed Validation Error",
-                            'Status Code'=>422,
-                    ]
-            ];
+        if ($validator->fails()) {
+            return response()->json(['errors'=>$validator->errors()],422);
         }
-//        if(Auth::check()){      // A second double check as anyone can add categories from postman if he have the request inputs.
+        else {
             $category = new Category;
             $name = $request->input('category-name');
             $category->name = $name;
             $category->save();
             return redirect()->back();
-//        }else{
-//            return redirect()->route('login');
-//        }
+        }
     }
 
     /**
@@ -66,16 +60,11 @@ class CategoryController extends Controller
             ];
         }
         $validator = Validator::make($request->all(),[
-            'category-name' => 'required'
+            'category-name' => 'required|max:15'
         ]);
-        if ($validator->fails()){
-            return ['errors'=> [
-                'message'=>"Parameter Failed Validation Error",
-                'Status Code'=>422,
-            ]
-            ];
+        if ($validator->fails()) {
+            return response()->json(['errors'=>$validator->errors()],422);
         }
-//        if(Auth::check()){      // A second double check as anyone can add categories from postman if he have the request inputs.
         $category = Category::find($categoryid);
         if($category == null){
             return ['errors'=> [
@@ -88,9 +77,6 @@ class CategoryController extends Controller
         $category->name = $name;
         $category->save();
         return redirect()->back();
-//        }else{
-//            return redirect()->route('login');
-//        }
     }
 
     /**

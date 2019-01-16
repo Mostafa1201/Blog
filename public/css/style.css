@@ -141,6 +141,34 @@ a.my-nav-links:hover{
     font-size: 2.25em;
 }
 
+.posts .card p{
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 3.6em;
+    text-align: justify;
+    margin-right: -1em;
+    padding-right: 1em;
+}
+
+.posts .card p:before{
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.posts .card p:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: #f8f9fa;
+}
+
+
 .add-post-button{
     display: flex;
     justify-content: center;
